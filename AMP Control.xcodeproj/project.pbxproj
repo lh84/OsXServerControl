@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		469F659518E352A700386CEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F659418E352A700386CEE /* Cocoa.framework */; };
+		469F659F18E352A700386CEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469F659D18E352A700386CEE /* InfoPlist.strings */; };
+		469F65A118E352A700386CEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F65A018E352A700386CEE /* main.m */; };
+		469F65A518E352A700386CEE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 469F65A318E352A700386CEE /* Credits.rtf */; };
+		469F65A818E352A700386CEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F65A718E352A700386CEE /* AppDelegate.m */; };
+		469F65AB18E352A700386CEE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469F65A918E352A700386CEE /* MainMenu.xib */; };
+		469F65AD18E352A700386CEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469F65AC18E352A700386CEE /* Images.xcassets */; };
+		469F65B418E352A700386CEE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F65B318E352A700386CEE /* XCTest.framework */; };
+		469F65B518E352A700386CEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F659418E352A700386CEE /* Cocoa.framework */; };
+		469F65BD18E352A700386CEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469F65BB18E352A700386CEE /* InfoPlist.strings */; };
+		469F65BF18E352A700386CEE /* AMP_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F65BE18E352A700386CEE /* AMP_ControlTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		469F65B618E352A700386CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469F658918E352A600386CEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 469F659018E352A600386CEE;
+			remoteInfo = "AMP Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		469F659118E352A700386CEE /* AMP Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMP Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		469F659418E352A700386CEE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		469F659718E352A700386CEE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		469F659818E352A700386CEE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		469F659918E352A700386CEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		469F659C18E352A700386CEE /* AMP Control-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMP Control-Info.plist"; sourceTree = "<group>"; };
+		469F659E18E352A700386CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		469F65A018E352A700386CEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		469F65A218E352A700386CEE /* AMP Control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMP Control-Prefix.pch"; sourceTree = "<group>"; };
+		469F65A418E352A700386CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		469F65A618E352A700386CEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		469F65A718E352A700386CEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		469F65AA18E352A700386CEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		469F65AC18E352A700386CEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		469F65B218E352A700386CEE /* AMP ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AMP ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		469F65B318E352A700386CEE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		469F65BA18E352A700386CEE /* AMP ControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMP ControlTests-Info.plist"; sourceTree = "<group>"; };
+		469F65BC18E352A700386CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		469F65BE18E352A700386CEE /* AMP_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMP_ControlTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		469F658E18E352A600386CEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F659518E352A700386CEE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F65AF18E352A700386CEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F65B518E352A700386CEE /* Cocoa.framework in Frameworks */,
+				469F65B418E352A700386CEE /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		469F658818E352A600386CEE = {
+			isa = PBXGroup;
+			children = (
+				469F659A18E352A700386CEE /* AMP Control */,
+				469F65B818E352A700386CEE /* AMP ControlTests */,
+				469F659318E352A700386CEE /* Frameworks */,
+				469F659218E352A700386CEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		469F659218E352A700386CEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				469F659118E352A700386CEE /* AMP Control.app */,
+				469F65B218E352A700386CEE /* AMP ControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		469F659318E352A700386CEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				469F659418E352A700386CEE /* Cocoa.framework */,
+				469F65B318E352A700386CEE /* XCTest.framework */,
+				469F659618E352A700386CEE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		469F659618E352A700386CEE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				469F659718E352A700386CEE /* AppKit.framework */,
+				469F659818E352A700386CEE /* CoreData.framework */,
+				469F659918E352A700386CEE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		469F659A18E352A700386CEE /* AMP Control */ = {
+			isa = PBXGroup;
+			children = (
+				469F65A618E352A700386CEE /* AppDelegate.h */,
+				469F65A718E352A700386CEE /* AppDelegate.m */,
+				469F65A918E352A700386CEE /* MainMenu.xib */,
+				469F65AC18E352A700386CEE /* Images.xcassets */,
+				469F659B18E352A700386CEE /* Supporting Files */,
+			);
+			path = "AMP Control";
+			sourceTree = "<group>";
+		};
+		469F659B18E352A700386CEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				469F659C18E352A700386CEE /* AMP Control-Info.plist */,
+				469F659D18E352A700386CEE /* InfoPlist.strings */,
+				469F65A018E352A700386CEE /* main.m */,
+				469F65A218E352A700386CEE /* AMP Control-Prefix.pch */,
+				469F65A318E352A700386CEE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		469F65B818E352A700386CEE /* AMP ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				469F65BE18E352A700386CEE /* AMP_ControlTests.m */,
+				469F65B918E352A700386CEE /* Supporting Files */,
+			);
+			path = "AMP ControlTests";
+			sourceTree = "<group>";
+		};
+		469F65B918E352A700386CEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				469F65BA18E352A700386CEE /* AMP ControlTests-Info.plist */,
+				469F65BB18E352A700386CEE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		469F659018E352A600386CEE /* AMP Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469F65C218E352A700386CEE /* Build configuration list for PBXNativeTarget "AMP Control" */;
+			buildPhases = (
+				469F658D18E352A600386CEE /* Sources */,
+				469F658E18E352A600386CEE /* Frameworks */,
+				469F658F18E352A600386CEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AMP Control";
+			productName = "AMP Control";
+			productReference = 469F659118E352A700386CEE /* AMP Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		469F65B118E352A700386CEE /* AMP ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469F65C518E352A700386CEE /* Build configuration list for PBXNativeTarget "AMP ControlTests" */;
+			buildPhases = (
+				469F65AE18E352A700386CEE /* Sources */,
+				469F65AF18E352A700386CEE /* Frameworks */,
+				469F65B018E352A700386CEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				469F65B718E352A700386CEE /* PBXTargetDependency */,
+			);
+			name = "AMP ControlTests";
+			productName = "AMP ControlTests";
+			productReference = 469F65B218E352A700386CEE /* AMP ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		469F658918E352A600386CEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Lars Häuser";
+				TargetAttributes = {
+					469F65B118E352A700386CEE = {
+						TestTargetID = 469F659018E352A600386CEE;
+					};
+				};
+			};
+			buildConfigurationList = 469F658C18E352A600386CEE /* Build configuration list for PBXProject "AMP Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 469F658818E352A600386CEE;
+			productRefGroup = 469F659218E352A700386CEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				469F659018E352A600386CEE /* AMP Control */,
+				469F65B118E352A700386CEE /* AMP ControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		469F658F18E352A600386CEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F659F18E352A700386CEE /* InfoPlist.strings in Resources */,
+				469F65AD18E352A700386CEE /* Images.xcassets in Resources */,
+				469F65A518E352A700386CEE /* Credits.rtf in Resources */,
+				469F65AB18E352A700386CEE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F65B018E352A700386CEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F65BD18E352A700386CEE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		469F658D18E352A600386CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F65A818E352A700386CEE /* AppDelegate.m in Sources */,
+				469F65A118E352A700386CEE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469F65AE18E352A700386CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F65BF18E352A700386CEE /* AMP_ControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		469F65B718E352A700386CEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 469F659018E352A600386CEE /* AMP Control */;
+			targetProxy = 469F65B618E352A700386CEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		469F659D18E352A700386CEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469F659E18E352A700386CEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		469F65A318E352A700386CEE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469F65A418E352A700386CEE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		469F65A918E352A700386CEE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469F65AA18E352A700386CEE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		469F65BB18E352A700386CEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469F65BC18E352A700386CEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		469F65C018E352A700386CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		469F65C118E352A700386CEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		469F65C318E352A700386CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMP Control/AMP Control-Prefix.pch";
+				INFOPLIST_FILE = "AMP Control/AMP Control-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		469F65C418E352A700386CEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMP Control/AMP Control-Prefix.pch";
+				INFOPLIST_FILE = "AMP Control/AMP Control-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		469F65C618E352A700386CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AMP Control.app/Contents/MacOS/AMP Control";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMP Control/AMP Control-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AMP ControlTests/AMP ControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		469F65C718E352A700386CEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AMP Control.app/Contents/MacOS/AMP Control";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMP Control/AMP Control-Prefix.pch";
+				INFOPLIST_FILE = "AMP ControlTests/AMP ControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		469F658C18E352A600386CEE /* Build configuration list for PBXProject "AMP Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F65C018E352A700386CEE /* Debug */,
+				469F65C118E352A700386CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469F65C218E352A700386CEE /* Build configuration list for PBXNativeTarget "AMP Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F65C318E352A700386CEE /* Debug */,
+				469F65C418E352A700386CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		469F65C518E352A700386CEE /* Build configuration list for PBXNativeTarget "AMP ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F65C618E352A700386CEE /* Debug */,
+				469F65C718E352A700386CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 469F658918E352A600386CEE /* Project object */;
+}
