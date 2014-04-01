@@ -19,6 +19,7 @@
 		469F65BD18E352A700386CEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469F65BB18E352A700386CEE /* InfoPlist.strings */; };
 		469F65BF18E352A700386CEE /* AMP_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F65BE18E352A700386CEE /* AMP_ControlTests.m */; };
 		46A492CC18EB26FB003B1C0D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46A492CB18EB26FB003B1C0D /* README.md */; };
+		46A492D018EB2D4E003B1C0D /* githubAMControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A492CF18EB2D4E003B1C0D /* githubAMControl.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		469F65BC18E352A700386CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		469F65BE18E352A700386CEE /* AMP_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMP_ControlTests.m; sourceTree = "<group>"; };
 		46A492CB18EB26FB003B1C0D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		46A492CF18EB2D4E003B1C0D /* githubAMControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubAMControl.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		469F658818E352A600386CEE = {
 			isa = PBXGroup;
 			children = (
+				46A492CF18EB2D4E003B1C0D /* githubAMControl.png */,
 				46A492CB18EB26FB003B1C0D /* README.md */,
 				469F659A18E352A700386CEE /* AMP Control */,
 				469F65B818E352A700386CEE /* AMP ControlTests */,
@@ -235,6 +238,7 @@
 			files = (
 				469F659F18E352A700386CEE /* InfoPlist.strings in Resources */,
 				469F65AD18E352A700386CEE /* Images.xcassets in Resources */,
+				46A492D018EB2D4E003B1C0D /* githubAMControl.png in Resources */,
 				46A492CC18EB26FB003B1C0D /* README.md in Resources */,
 				469F65A518E352A700386CEE /* Credits.rtf in Resources */,
 				469F65AB18E352A700386CEE /* MainMenu.xib in Resources */,
