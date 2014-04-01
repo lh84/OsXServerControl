@@ -11,5 +11,17 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSLevelIndicator *apacheIndi;
+@property (weak) IBOutlet NSLevelIndicator *mysqlIndi;
+@property (weak) IBOutlet NSButton *apacheButton;
+@property (weak) IBOutlet NSButton *mysqlButton;
+@property (weak) IBOutlet NSLevelIndicatorCell *apacheIndiCell;
+@property (weak) IBOutlet NSLevelIndicatorCell *mysqlIndiCell;
+- (IBAction)apacheStartButton:(id)sender;
+- (IBAction)mysqlStartButton:(id)sender;
+@property (weak) IBOutlet NSTextField *apacheLabel;
+@property (weak) IBOutlet NSTextField *mysqlLabel;
+@property (weak) IBOutlet NSProgressIndicator *apacheCircIndi;
+@property (weak) IBOutlet NSProgressIndicator *mysqlCircIndi;
 
 @end
