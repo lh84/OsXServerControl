@@ -93,7 +93,7 @@
     [apacheCircIndi startAnimation:self];
     if([self startApache]){
         [apacheIndiCell setDoubleValue:3];
-        [apacheButton setTitle:@"Apache stoppen"];
+        [apacheButton setTitle:@"Apache stop"];
     }
 }
 
