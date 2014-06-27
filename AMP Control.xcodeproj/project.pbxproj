@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4612ED21195D8FF30093CBF1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4612ED20195D8FF30093CBF1 /* Credits.rtf */; };
+		4612ED23195D90020093CBF1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4612ED22195D90020093CBF1 /* MainMenu.xib */; };
 		4617E46818EC783E007FEADC /* icons.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 4617E46718EC783E007FEADC /* icons.iconset */; };
 		4678A5DA195D757400D2D9AD /* githubAMControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4678A5D9195D757400D2D9AD /* githubAMControl.png */; };
 		469F659518E352A700386CEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F659418E352A700386CEE /* Cocoa.framework */; };
-		469F659F18E352A700386CEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469F659D18E352A700386CEE /* InfoPlist.strings */; };
 		469F65A118E352A700386CEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F65A018E352A700386CEE /* main.m */; };
-		469F65A518E352A700386CEE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 469F65A318E352A700386CEE /* Credits.rtf */; };
 		469F65A818E352A700386CEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F65A718E352A700386CEE /* AppDelegate.m */; };
-		469F65AB18E352A700386CEE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469F65A918E352A700386CEE /* MainMenu.xib */; };
-		469F65AD18E352A700386CEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469F65AC18E352A700386CEE /* Images.xcassets */; };
 		469F65B418E352A700386CEE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F65B318E352A700386CEE /* XCTest.framework */; };
 		469F65B518E352A700386CEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F659418E352A700386CEE /* Cocoa.framework */; };
 		469F65BD18E352A700386CEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469F65BB18E352A700386CEE /* InfoPlist.strings */; };
@@ -35,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4612ED20195D8FF30093CBF1 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		4612ED22195D90020093CBF1 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		4617E46718EC783E007FEADC /* icons.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icons.iconset; sourceTree = "<group>"; };
 		4678A5D9195D757400D2D9AD /* githubAMControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = githubAMControl.png; sourceTree = "<group>"; };
 		469F659118E352A700386CEE /* AMP Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMP Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,14 +43,10 @@
 		469F659818E352A700386CEE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		469F659918E352A700386CEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		469F659C18E352A700386CEE /* AMP Control-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMP Control-Info.plist"; sourceTree = "<group>"; };
-		469F659E18E352A700386CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		469F65A018E352A700386CEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		469F65A218E352A700386CEE /* AMP Control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMP Control-Prefix.pch"; sourceTree = "<group>"; };
-		469F65A418E352A700386CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		469F65A618E352A700386CEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		469F65A718E352A700386CEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		469F65AA18E352A700386CEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		469F65AC18E352A700386CEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		469F65B218E352A700386CEE /* AMP ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AMP ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		469F65B318E352A700386CEE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		469F65BA18E352A700386CEE /* AMP ControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMP ControlTests-Info.plist"; sourceTree = "<group>"; };
@@ -127,10 +123,9 @@
 		469F659A18E352A700386CEE /* AMP Control */ = {
 			isa = PBXGroup;
 			children = (
+				4612ED22195D90020093CBF1 /* MainMenu.xib */,
 				469F65A618E352A700386CEE /* AppDelegate.h */,
 				469F65A718E352A700386CEE /* AppDelegate.m */,
-				469F65A918E352A700386CEE /* MainMenu.xib */,
-				469F65AC18E352A700386CEE /* Images.xcassets */,
 				469F659B18E352A700386CEE /* Supporting Files */,
 			);
 			path = "AMP Control";
@@ -140,10 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				469F659C18E352A700386CEE /* AMP Control-Info.plist */,
-				469F659D18E352A700386CEE /* InfoPlist.strings */,
+				4612ED20195D8FF30093CBF1 /* Credits.rtf */,
 				469F65A018E352A700386CEE /* main.m */,
 				469F65A218E352A700386CEE /* AMP Control-Prefix.pch */,
-				469F65A318E352A700386CEE /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -242,14 +236,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4612ED21195D8FF30093CBF1 /* Credits.rtf in Resources */,
 				4678A5DA195D757400D2D9AD /* githubAMControl.png in Resources */,
-				469F659F18E352A700386CEE /* InfoPlist.strings in Resources */,
-				469F65AD18E352A700386CEE /* Images.xcassets in Resources */,
 				46A492CC18EB26FB003B1C0D /* README.md in Resources */,
 				4617E46818EC783E007FEADC /* icons.iconset in Resources */,
-				469F65A518E352A700386CEE /* Credits.rtf in Resources */,
-				469F65AB18E352A700386CEE /* MainMenu.xib in Resources */,
 				46A492D218EB2FFC003B1C0D /* LICENSE.md in Resources */,
+				4612ED23195D90020093CBF1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,30 +284,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		469F659D18E352A700386CEE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				469F659E18E352A700386CEE /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		469F65A318E352A700386CEE /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				469F65A418E352A700386CEE /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		469F65A918E352A700386CEE /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				469F65AA18E352A700386CEE /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		469F65BB18E352A700386CEE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

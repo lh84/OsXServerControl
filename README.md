@@ -10,12 +10,13 @@ The app looks like on the image below
 ![Mac OSX App to control apache, mysql](https://raw.githubusercontent.com/lh84/AMControl/master/githubAMControl.png "App")
 
 ---
-It is not fully working at the moment.
+
+If you want to use the app you have to compile it with xcode or you can download the app ![here](https://github.com/lh84/AMControl/issues/new "App").
 
 
 ### TODO
 
-...
+If you have any ideas just let me know or open a ticket ![here](https://github.com/lh84/AMControl/issues/new "App").
 
 ### License
 
