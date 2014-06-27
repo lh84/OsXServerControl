@@ -14,27 +14,123 @@
 
 @synthesize apacheButton, apacheIndi,
             mysqlButton, mysqlIndi,
+            recheck,
             mysqlIndiCell, apacheIndiCell,
             apacheLabel, mysqlLabel, apacheCircIndi, mysqlCircIndi;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+
+NSString *const APACHESTART = @"Apache start";
+NSString *const APACHESTOP = @"Apache stop";
+NSString *const MYSQLSTART = @"MySQL start";
+NSString *const MYSQLSTOP = @"MySQL stop";
+
+- (void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [apacheCircIndi setDisplayedWhenStopped:NO];
     [mysqlCircIndi setDisplayedWhenStopped:NO];
     [apacheIndiCell setDoubleValue:1];
     [mysqlIndiCell setDoubleValue:1];
+    
+    [self checkIfApacheIsRunning];
+    [self checkIfMysqlIsRunning];
 }
 
-- (BOOL) startApache {
+- (void) startApache {
+    [apacheCircIndi startAnimation:self];
+    NSString *command;
+    if (apacheButton.title == APACHESTOP) {
+        command = @"stop";
+    } else if (apacheButton.title == APACHESTART) {
+        command = @"start";
+    }
+    
     NSString * output = nil;
     NSString * processErrorDescription = nil;
-    BOOL isRunning = [self runProcessAsAdministrator:@"httpd"
-                             withArguments:[NSArray arrayWithObjects:@"-k", @"start", nil]
-                                    output:&output
-                          errorDescription:&processErrorDescription];
-    [apacheLabel setStringValue:output];
+    [self runProcessAsAdministrator:@"apachectl"
+                      withArguments:[NSArray arrayWithObjects:command, nil]
+                             output:&output
+                   errorDescription:&processErrorDescription];
+    
+    [self checkIfApacheIsRunning];
+    
+}
+
+- (void) startMySql {
+    
+    [mysqlCircIndi startAnimation:self];
+    NSString *command;
+    if (mysqlButton.title == MYSQLSTOP) {
+        command = @"stop";
+    } else if (apacheButton.title == MYSQLSTART) {
+        command = @"start";
+    }
+    
+    NSString * output = nil;
+    NSString * processErrorDescription = nil;
+    [self runProcessAsAdministrator:@"mysql.server"
+                      withArguments:[NSArray arrayWithObjects:command, nil]
+                             output:&output
+                   errorDescription:&processErrorDescription];
+    
+    [self checkIfMysqlIsRunning];
+    
+}
+
+- (void) checkIfApacheIsRunning {
+    // wait a seconf to look for pid
+    [NSThread sleepForTimeInterval:1.0f];
+    //grep http
+    NSString *output = runCommand(@"ps ax | grep httpd | grep -v grep");
+    if([output length] > 0)
+    {
+        // get pid number
+        [apacheLabel setStringValue: runCommand(@"tail /private/var/run/httpd.pid")];
+        [apacheButton setTitle:APACHESTOP];
+        [apacheIndiCell setDoubleValue:3];
+    }
+    else
+    {
+        [apacheLabel setStringValue: @""];
+        [apacheButton setTitle:APACHESTART];
+        [apacheIndiCell setDoubleValue:1];
+    }
     [apacheCircIndi stopAnimation:self];
-    return isRunning;
+}
+
+- (void) checkIfMysqlIsRunning {
+    // wait a seconf to look for pid
+    [NSThread sleepForTimeInterval:1.0f];
+    //grep http
+    NSString *output = runCommand(@"ps ax | grep mysql | grep -v grep");
+    if([output length] > 0)
+    {
+        // get pid number
+        [mysqlLabel setStringValue: runCommand(@"tail /usr/local/var/mysql/lars.fritz.box.pid")];
+        [mysqlButton setTitle:MYSQLSTOP];
+        [mysqlIndiCell setDoubleValue:3];
+    }
+    else
+    {
+        [mysqlLabel setStringValue: @""];
+        [mysqlButton setTitle:MYSQLSTART];
+        [mysqlIndiCell setDoubleValue:1];
+    }
+    [mysqlCircIndi stopAnimation:self];
+}
+
+- (IBAction)apacheStartButton:(id)sender {
+    [self startApache];
+}
+
+- (IBAction)mysqlStartButton:(id)sender {
+    [self startMySql];
+}
+
+- (IBAction)recheck:(id)sender {
+    [apacheCircIndi startAnimation:self];
+    [self checkIfApacheIsRunning];
+    [mysqlCircIndi startAnimation:self];
+    [self checkIfMysqlIsRunning];
 }
 
 - (BOOL) runProcessAsAdministrator:(NSString*)scriptPath
@@ -81,22 +177,34 @@
     }
 }
 
-- (BOOL) checkIfApacheIsRunning {
-    return YES;
+NSString *runCommand(NSString *commandToRun)
+{
+    NSTask *task;
+    task = [[NSTask alloc] init];
+    [task setLaunchPath: @"/bin/sh"];
+    
+    NSArray *arguments = [NSArray arrayWithObjects:
+                          @"-c" ,
+                          [NSString stringWithFormat:@"%@", commandToRun],
+                          nil];
+    //NSLog(@"run command: %@",commandToRun);
+    [task setArguments: arguments];
+    
+    NSPipe *pipe;
+    pipe = [NSPipe pipe];
+    [task setStandardOutput: pipe];
+    
+    NSFileHandle *file;
+    file = [pipe fileHandleForReading];
+    
+    [task launch];
+    
+    NSData *data;
+    data = [file readDataToEndOfFile];
+    
+    NSString *output;
+    output = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+    return output;
 }
 
-- (BOOL) checkIfMysqlIsRunning {
-    return YES;
-}
-
-- (IBAction)apacheStartButton:(id)sender {
-    [apacheCircIndi startAnimation:self];
-    if([self startApache]){
-        [apacheIndiCell setDoubleValue:3];
-        [apacheButton setTitle:@"Apache stop"];
-    }
-}
-
-- (IBAction)mysqlStartButton:(id)sender {
-}
 @end

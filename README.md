@@ -13,9 +13,11 @@ The app looks like on the image below
 It is not fully working at the moment.
 
 
-##TODO
+### TODO
 
+...
 
+### License
 
-## License
+Open Source under MIT License
 

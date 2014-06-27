@@ -15,6 +15,7 @@
 @property (weak) IBOutlet NSLevelIndicator *mysqlIndi;
 @property (weak) IBOutlet NSButton *apacheButton;
 @property (weak) IBOutlet NSButton *mysqlButton;
+@property (weak) IBOutlet NSButton *recheck;
 @property (weak) IBOutlet NSLevelIndicatorCell *apacheIndiCell;
 @property (weak) IBOutlet NSLevelIndicatorCell *mysqlIndiCell;
 - (IBAction)apacheStartButton:(id)sender;
@@ -23,5 +24,6 @@
 @property (weak) IBOutlet NSTextField *mysqlLabel;
 @property (weak) IBOutlet NSProgressIndicator *apacheCircIndi;
 @property (weak) IBOutlet NSProgressIndicator *mysqlCircIndi;
+- (IBAction)recheck:(id)sender;
 
 @end
