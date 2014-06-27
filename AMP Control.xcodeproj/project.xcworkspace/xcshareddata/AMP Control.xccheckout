@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F4AF20A0-6AE9-4FF1-9979-CD2AE432BC7E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AMP Control</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>56FD458B-905E-4880-B9CD-422E77155F3F</key>
+		<string>ssh://github.com/lh84/AMControl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AMP Control.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>56FD458B-905E-4880-B9CD-422E77155F3F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/lh84/AMControl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>56FD458B-905E-4880-B9CD-422E77155F3F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>56FD458B-905E-4880-B9CD-422E77155F3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AMP Control</string>
+		</dict>
+	</array>
+</dict>
+</plist>
