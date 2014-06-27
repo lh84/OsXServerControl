@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4617E46818EC783E007FEADC /* icons.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 4617E46718EC783E007FEADC /* icons.iconset */; };
 		469F659518E352A700386CEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F659418E352A700386CEE /* Cocoa.framework */; };
 		469F659F18E352A700386CEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469F659D18E352A700386CEE /* InfoPlist.strings */; };
 		469F65A118E352A700386CEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F65A018E352A700386CEE /* main.m */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4617E46718EC783E007FEADC /* icons.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icons.iconset; sourceTree = "<group>"; };
 		469F659118E352A700386CEE /* AMP Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMP Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		469F659418E352A700386CEE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		469F659718E352A700386CEE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -82,6 +84,7 @@
 		469F658818E352A600386CEE = {
 			isa = PBXGroup;
 			children = (
+				4617E46718EC783E007FEADC /* icons.iconset */,
 				46A492D118EB2FFC003B1C0D /* LICENSE.md */,
 				46A492CF18EB2D4E003B1C0D /* githubAMControl.png */,
 				46A492CB18EB26FB003B1C0D /* README.md */,
@@ -243,6 +246,7 @@
 				469F65AD18E352A700386CEE /* Images.xcassets in Resources */,
 				46A492D018EB2D4E003B1C0D /* githubAMControl.png in Resources */,
 				46A492CC18EB26FB003B1C0D /* README.md in Resources */,
+				4617E46818EC783E007FEADC /* icons.iconset in Resources */,
 				469F65A518E352A700386CEE /* Credits.rtf in Resources */,
 				469F65AB18E352A700386CEE /* MainMenu.xib in Resources */,
 				46A492D218EB2FFC003B1C0D /* LICENSE.md in Resources */,
