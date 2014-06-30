@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>AMP Control</string>
 	<key>CFBundleIconFile</key>
-	<string>icons</string>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>de.lh84.AMP-Control</string>
 	<key>CFBundleInfoDictionaryVersion</key>

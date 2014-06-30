@@ -16,13 +16,23 @@
             mysqlButton, mysqlIndi,
             recheck,
             mysqlIndiCell, apacheIndiCell,
-            apacheLabel, mysqlLabel, apacheCircIndi, mysqlCircIndi;
-
+            apacheLabel, mysqlLabel, apacheCircIndi, mysqlCircIndi,
+            tile;
 
 NSString *const APACHESTART = @"Apache start";
 NSString *const APACHESTOP = @"Apache stop";
 NSString *const MYSQLSTART = @"MySQL start";
 NSString *const MYSQLSTOP = @"MySQL stop";
+
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        tile = [[NSApplication sharedApplication] dockTile];
+    }
+    return self;
+}
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -31,8 +41,7 @@ NSString *const MYSQLSTOP = @"MySQL stop";
     [apacheIndiCell setDoubleValue:1];
     [mysqlIndiCell setDoubleValue:1];
     
-    [self checkIfApacheIsRunning];
-    [self checkIfMysqlIsRunning];
+    [self checkBoth];
 }
 
 - (void) startApache {
@@ -76,46 +85,69 @@ NSString *const MYSQLSTOP = @"MySQL stop";
     
 }
 
-- (void) checkIfApacheIsRunning {
+-(void) checkBoth {
+    if([self checkIfMysqlIsRunning] && [self checkIfApacheIsRunning])
+    {
+        [tile setBadgeLabel:@"both"];
+    }
+    else if ([self checkIfApacheIsRunning] && ![self checkIfMysqlIsRunning])
+    {
+        [tile setBadgeLabel:@"Apache"];
+    }
+    else if (![self checkIfApacheIsRunning] && [self checkIfMysqlIsRunning])
+    {
+        [tile setBadgeLabel:@"MySQL"];
+    }
+}
+
+- (BOOL) checkIfApacheIsRunning {
     // wait a seconf to look for pid
     [NSThread sleepForTimeInterval:1.0f];
     //grep http
     NSString *output = runCommand(@"ps ax | grep httpd | grep -v grep");
+    BOOL running = true;
     if([output length] > 0)
     {
         // get pid number
         [apacheLabel setStringValue: runCommand(@"tail /private/var/run/httpd.pid")];
         [apacheButton setTitle:APACHESTOP];
         [apacheIndiCell setDoubleValue:3];
+        running = true;
     }
     else
     {
         [apacheLabel setStringValue: @""];
         [apacheButton setTitle:APACHESTART];
         [apacheIndiCell setDoubleValue:1];
+        running = false;
     }
     [apacheCircIndi stopAnimation:self];
+    return running;
 }
 
-- (void) checkIfMysqlIsRunning {
+- (BOOL) checkIfMysqlIsRunning {
     // wait a seconf to look for pid
     [NSThread sleepForTimeInterval:1.0f];
     //grep http
     NSString *output = runCommand(@"ps ax | grep mysql | grep -v grep");
+    BOOL running = true;
     if([output length] > 0)
     {
         // get pid number
         [mysqlLabel setStringValue: runCommand(@"tail /usr/local/var/mysql/lars.fritz.box.pid")];
         [mysqlButton setTitle:MYSQLSTOP];
         [mysqlIndiCell setDoubleValue:3];
+        running = true;
     }
     else
     {
         [mysqlLabel setStringValue: @""];
         [mysqlButton setTitle:MYSQLSTART];
         [mysqlIndiCell setDoubleValue:1];
+        running = false;
     }
     [mysqlCircIndi stopAnimation:self];
+    return running;
 }
 
 - (IBAction)apacheStartButton:(id)sender {

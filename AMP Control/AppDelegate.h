@@ -26,4 +26,6 @@
 @property (weak) IBOutlet NSProgressIndicator *mysqlCircIndi;
 - (IBAction)recheck:(id)sender;
 
+@property NSDockTile *tile;
+
 @end
