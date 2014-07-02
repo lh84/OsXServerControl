@@ -60,7 +60,7 @@ NSString *const MYSQLSTOP = @"MySQL stop";
                              output:&output
                    errorDescription:&processErrorDescription];
     
-    [self checkIfApacheIsRunning];
+    [self checkBoth];
     
 }
 
@@ -81,7 +81,7 @@ NSString *const MYSQLSTOP = @"MySQL stop";
                              output:&output
                    errorDescription:&processErrorDescription];
     
-    [self checkIfMysqlIsRunning];
+    [self checkBoth];
     
 }
 
@@ -160,9 +160,8 @@ NSString *const MYSQLSTOP = @"MySQL stop";
 
 - (IBAction)recheck:(id)sender {
     [apacheCircIndi startAnimation:self];
-    [self checkIfApacheIsRunning];
     [mysqlCircIndi startAnimation:self];
-    [self checkIfMysqlIsRunning];
+    [self checkBoth];
 }
 
 - (BOOL) runProcessAsAdministrator:(NSString*)scriptPath
