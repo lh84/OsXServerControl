@@ -68,33 +68,32 @@ NSString *const MYSQLSTOP = @"MySQL stop";
     
     [mysqlCircIndi startAnimation:self];
     NSString *command;
-    if (mysqlButton.title == MYSQLSTOP) {
+    
+    if ([mysqlButton.title isEqualToString: MYSQLSTOP]) {
         command = @"stop";
-    } else if (apacheButton.title == MYSQLSTART) {
+    } else if ([mysqlButton.title isEqualToString: MYSQLSTART]) {
         command = @"start";
     }
-    
-    NSString * output = nil;
-    NSString * processErrorDescription = nil;
-    [self runProcessAsAdministrator:@"mysql.server"
-                      withArguments:[NSArray arrayWithObjects:command, nil]
-                             output:&output
-                   errorDescription:&processErrorDescription];
+    runCommand([NSString stringWithFormat:@"/usr/local/opt/mysql/bin/mysql.server %@", command]);
     
     [self checkBoth];
     
 }
 
--(void) checkBoth {
-    if([self checkIfMysqlIsRunning] && [self checkIfApacheIsRunning])
+-(void) checkBoth
+{
+    BOOL mr = [self checkIfMysqlIsRunning];
+    BOOL ar = [self checkIfApacheIsRunning];
+    
+    if(mr && ar)
     {
         [tile setBadgeLabel:@"both"];
     }
-    else if ([self checkIfApacheIsRunning] && ![self checkIfMysqlIsRunning])
+    else if (ar)
     {
         [tile setBadgeLabel:@"Apache"];
     }
-    else if (![self checkIfApacheIsRunning] && [self checkIfMysqlIsRunning])
+    else if (mr)
     {
         [tile setBadgeLabel:@"MySQL"];
     }
@@ -110,14 +109,14 @@ NSString *const MYSQLSTOP = @"MySQL stop";
     {
         // get pid number
         [apacheLabel setStringValue: runCommand(@"tail /private/var/run/httpd.pid")];
-        [apacheButton setTitle:APACHESTOP];
+        [apacheButton setTitle: APACHESTOP];
         [apacheIndiCell setDoubleValue:3];
         running = true;
     }
     else
     {
         [apacheLabel setStringValue: @""];
-        [apacheButton setTitle:APACHESTART];
+        [apacheButton setTitle: APACHESTART];
         [apacheIndiCell setDoubleValue:1];
         running = false;
     }
@@ -135,14 +134,14 @@ NSString *const MYSQLSTOP = @"MySQL stop";
     {
         // get pid number
         [mysqlLabel setStringValue: runCommand(@"tail /usr/local/var/mysql/lars.fritz.box.pid")];
-        [mysqlButton setTitle:MYSQLSTOP];
+        [mysqlButton setTitle: MYSQLSTOP];
         [mysqlIndiCell setDoubleValue:3];
         running = true;
     }
     else
     {
         [mysqlLabel setStringValue: @""];
-        [mysqlButton setTitle:MYSQLSTART];
+        [mysqlButton setTitle: MYSQLSTART];
         [mysqlIndiCell setDoubleValue:1];
         running = false;
     }
@@ -212,7 +211,7 @@ NSString *runCommand(NSString *commandToRun)
 {
     NSTask *task;
     task = [[NSTask alloc] init];
-    [task setLaunchPath: @"/bin/sh"];
+    [task setLaunchPath: @"/bin/bash"];
     
     NSArray *arguments = [NSArray arrayWithObjects:
                           @"-c" ,
