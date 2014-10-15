@@ -132,8 +132,14 @@ NSString *const MYSQLSTOP = @"MySQL stop";
     BOOL running = true;
     if([output length] > 0)
     {
+        // get name of host to find correct pid file
+        NSString *hn = runCommand(@"HOSTNAME");
+        
+        NSString *complete = [NSString stringWithFormat:@"tail /usr/local/var/mysql/%@.pid", [hn stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
         // get pid number
-        [mysqlLabel setStringValue: runCommand(@"tail /usr/local/var/mysql/lars.fritz.box.pid")];
+        [mysqlLabel setStringValue: runCommand(complete)];
+        //NSLog(pidfilepath);
+        
         [mysqlButton setTitle: MYSQLSTOP];
         [mysqlIndiCell setDoubleValue:3];
         running = true;
@@ -207,6 +213,16 @@ NSString *const MYSQLSTOP = @"MySQL stop";
     }
 }
 
+NSString *removeNewLine(NSString *string)
+{
+    NSArray* newLineChars = [NSArray arrayWithObjects:@"\\u000A", @"\\u000B",@"\\u000C",@"\\u000D",@"\\u0085",nil];
+    
+    for( NSString* nl in newLineChars )
+        string = [string stringByReplacingOccurrencesOfString: nl withString:@""];
+    
+    return string;
+}
+
 NSString *runCommand(NSString *commandToRun)
 {
     NSTask *task;
@@ -217,7 +233,7 @@ NSString *runCommand(NSString *commandToRun)
                           @"-c" ,
                           [NSString stringWithFormat:@"%@", commandToRun],
                           nil];
-    //NSLog(@"run command: %@",commandToRun);
+    NSLog(@"run command: %@",commandToRun);
     [task setArguments: arguments];
     
     NSPipe *pipe;
@@ -234,6 +250,7 @@ NSString *runCommand(NSString *commandToRun)
     
     NSString *output;
     output = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+    
     return output;
 }
 

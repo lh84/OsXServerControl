@@ -374,6 +374,7 @@
 				GCC_PREFIX_HEADER = "AMP Control/AMP Control-Prefix.pch";
 				INFOPLIST_FILE = "AMP Control/AMP Control-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -387,6 +388,7 @@
 				GCC_PREFIX_HEADER = "AMP Control/AMP Control-Prefix.pch";
 				INFOPLIST_FILE = "AMP Control/AMP Control-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

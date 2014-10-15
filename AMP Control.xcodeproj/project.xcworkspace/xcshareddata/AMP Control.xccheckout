@@ -10,22 +10,26 @@
 	<string>AMP Control</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>390DE9F46DBE568E2BD3D81C459D6C2C3C0F0217</key>
+		<string>github.com:lh84/AMControl.git</string>
 		<key>56FD458B-905E-4880-B9CD-422E77155F3F</key>
 		<string>ssh://github.com/lh84/AMControl.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AMP Control.xcodeproj/project.xcworkspace</string>
+	<string>AMP Control.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>56FD458B-905E-4880-B9CD-422E77155F3F</key>
+		<key>390DE9F46DBE568E2BD3D81C459D6C2C3C0F0217</key>
 		<string>../..</string>
+		<key>56FD458B-905E-4880-B9CD-422E77155F3F</key>
+		<string>../../../AMP Control</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/lh84/AMControl.git</string>
+	<string>github.com:lh84/AMControl.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>56FD458B-905E-4880-B9CD-422E77155F3F</string>
+	<string>390DE9F46DBE568E2BD3D81C459D6C2C3C0F0217</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>56FD458B-905E-4880-B9CD-422E77155F3F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AMP Control</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>390DE9F46DBE568E2BD3D81C459D6C2C3C0F0217</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AMP%20Control</string>
 		</dict>
 	</array>
 </dict>
