@@ -2,10 +2,10 @@
 
 ##Description
 
-With this small Mac OS X (10.9) App you can start and stopp the Mac builtin Apache and MySql Servers.
-It's like the tiny app XAMPP Control...
+With this small Mac OS X (10.9, 10.10) App you can start and stopp the Mac OSX-builtin Apache and MySql Servers.
+It is like a tiny version of the XAMPP Control without additional software and overloaded stuff.
 
-The app looks like on the image below
+This is how the App looks in Mavericks.
 
 ![Mac OSX App to control apache, mysql](https://raw.githubusercontent.com/lh84/AMControl/master/githubAMControl.png "App")
 
