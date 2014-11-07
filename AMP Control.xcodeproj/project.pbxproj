@@ -204,7 +204,7 @@
 		469F658918E352A600386CEE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Lars Häuser";
 				TargetAttributes = {
 					469F65B118E352A700386CEE = {
@@ -374,7 +374,7 @@
 				GCC_PREFIX_HEADER = "AMP Control/AMP Control-Prefix.pch";
 				INFOPLIST_FILE = "AMP Control/AMP Control-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,7 +388,7 @@
 				GCC_PREFIX_HEADER = "AMP Control/AMP Control-Prefix.pch";
 				INFOPLIST_FILE = "AMP Control/AMP Control-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
