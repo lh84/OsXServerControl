@@ -11,6 +11,9 @@ This is how the App looks in Mavericks.
 
 ---
 
+At the moment there is no possibility to change the paths to the server applications.
+The command  `apachectl`will be used to start and stop Apache webserver and `/usr/local/opt/mysql/bin/mysql.server ` is used to start MySQL server. 
+
 If you want to use the app you have to compile it with xcode or you can download this repo as zip file, extract it and put the AMP Control.app to your Applications folder.
 
 ### TODO
