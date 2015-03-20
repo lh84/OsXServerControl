@@ -1,4 +1,4 @@
-#AMControl
+#OSX Server Control
 
 ##Description
 
