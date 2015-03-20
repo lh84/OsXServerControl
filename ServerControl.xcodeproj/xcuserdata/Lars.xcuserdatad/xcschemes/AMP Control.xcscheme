@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "469F659018E352A600386CEE"
-               BuildableName = "AMP Control.app"
-               BlueprintName = "AMP Control"
-               ReferencedContainer = "container:AMP Control.xcodeproj">
+               BuildableName = "ServerControl.app"
+               BlueprintName = "ServerControl"
+               ReferencedContainer = "container:ServerControl.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "469F65B118E352A700386CEE"
-               BuildableName = "AMP ControlTests.xctest"
-               BlueprintName = "AMP ControlTests"
-               ReferencedContainer = "container:AMP Control.xcodeproj">
+               BuildableName = "ServerControlTests.xctest"
+               BlueprintName = "ServerControlTests"
+               ReferencedContainer = "container:ServerControl.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "469F659018E352A600386CEE"
-            BuildableName = "AMP Control.app"
-            BlueprintName = "AMP Control"
-            ReferencedContainer = "container:AMP Control.xcodeproj">
+            BuildableName = "ServerControl.app"
+            BlueprintName = "ServerControl"
+            ReferencedContainer = "container:ServerControl.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -58,13 +58,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "469F659018E352A600386CEE"
-            BuildableName = "AMP Control.app"
-            BlueprintName = "AMP Control"
-            ReferencedContainer = "container:AMP Control.xcodeproj">
+            BuildableName = "ServerControl.app"
+            BlueprintName = "ServerControl"
+            ReferencedContainer = "container:ServerControl.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,13 +77,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "469F659018E352A600386CEE"
-            BuildableName = "AMP Control.app"
-            BlueprintName = "AMP Control"
-            ReferencedContainer = "container:AMP Control.xcodeproj">
+            BuildableName = "ServerControl.app"
+            BlueprintName = "ServerControl"
+            ReferencedContainer = "container:ServerControl.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
